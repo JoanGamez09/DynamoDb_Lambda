@@ -4,7 +4,7 @@ from decimal import Decimal
 from botocore.exceptions import BotoCoreError, ClientError
 
 dynamodb = boto3.resource("dynamodb")
-TABLE_NAME = "Peliculas_S3D2_xideral"
+TABLE_NAME = "{DynamoDb table name}"
 
 def lambda_handler(event, context):
     table = dynamodb.Table(TABLE_NAME)
